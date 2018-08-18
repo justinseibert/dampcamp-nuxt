@@ -1,0 +1,32 @@
+$colors: (
+  white: #FFF,
+  dust: #e4e4e4,
+  ash: #c3c3c3,
+  wool: #5b5b5b,
+  night: #222,
+  blue: #3f64f4,
+  green: #4ab46a,
+  red: #ff384c,
+  orange: #ffbb00,
+  tangerine: #ff8600,
+  canary: #FF0,
+  clear: transparent,
+);
+
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $colors.";
+  @return null;
+}
+
+@function hover($key, $amount) {
+  @if map-has-key($colors, $key) {
+    @return darken(map-get($colors, $key), $amount);
+  }
+
+  @warn "Unknown `#{$key}` in $colors.";
+  @return null;
+}

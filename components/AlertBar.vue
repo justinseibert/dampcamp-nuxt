@@ -69,18 +69,16 @@
     font-size: 0.75em;
     margin: 0;
     overflow: hidden;
-    z-index: 9999;
+    z-index: z(alert);
     .alert {
-      padding: 10px;
-      background: white;
-      color: black;
+      padding: space(light);
+      background: color(ash);
+      color: color(white);
       &.success {
-        background: blue;
-        color: white;
+        background: color(blue);
       }
       &.failure {
-        background: red;
-        color: white;
+        background: color(red);
       }
     }
   }

@@ -1,0 +1,82 @@
+@import 'normalize';
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 400;
+  color: color(night);
+  background-image: url('/img/usgs/502b.png');
+  background-color: color(blue);
+  overflow: hidden;
+}
+
+@media (min-width: $desktop-min){
+  html,
+  body {
+    font-size: 130%;
+  }
+}
+
+div,
+article,
+figure,
+figcaption {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+canvas,
+video {
+  width: 100%;
+  vertical-align: top;
+}
+
+svg {
+  fill: color(night);
+  cursor: pointer;
+  transition: transform 100ms;
+}
+
+.button-hover {
+  transform: scale3d(1,1,1);
+  transition: all 100ms;
+  &:hover {
+    transform: scale3d(1.1,1.1,1.1);
+    fill: color(canary);
+    -webkit-filter: drop-shadow(1px 3px 0 color(night));
+    filter: drop-shadow(1px 3px 0 color(night));
+  }
+  &:active {
+    transform: scale3d(1,1,1);
+  }
+}
+
+// @import 'spacing';
+// @import 'grid';
+// @import 'typography';
+//
+// @import 'trail/landmark';
+// @import 'trail/project';
+// @import 'trail/trail';
+// @import 'trail/footer';
+//
+// @import 'utilities';

@@ -13,6 +13,19 @@ module.exports = {
       { rel: 'icon', type: 'image/png', href: '/raindrop.png' }
     ]
   },
+
+  css: [
+    '~/assets/sass/main.scss'
+  ],
+
+  modules: [
+    'nuxt-sass-resources-loader'
+  ],
+
+  sassResources: [
+    '@/assets/sass/_variables.scss',
+    '@/assets/sass/_colors.scss',
+  ],
   /*
   ** Customize the progress bar color
   */
