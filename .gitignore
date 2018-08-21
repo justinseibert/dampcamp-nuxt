@@ -1,3 +1,19 @@
+*.swp
+*.bak
+
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+
+*.pyc
+*.db
+*.log
+*.sql
+
+*.sh
+*.wsgi
+
 # dependencies
 node_modules
 
@@ -9,3 +25,9 @@ npm-debug.log
 
 # Nuxt generate
 dist
+
+# custom
+etc/
+static/img
+**/*.gvdesign
+.env
