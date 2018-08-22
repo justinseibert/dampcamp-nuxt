@@ -28,6 +28,7 @@ body {
 }
 
 div,
+main,
 article,
 figure,
 figcaption {
@@ -62,21 +63,14 @@ svg {
   &:hover {
     transform: scale3d(1.1,1.1,1.1);
     fill: color(canary);
-    -webkit-filter: drop-shadow(1px 3px 0 color(night));
-    filter: drop-shadow(1px 3px 0 color(night));
+    -webkit-filter: drop-shadow(1px 3px 0 color(wool));
+    filter: drop-shadow(1px 3px 0 color(wool));
   }
   &:active {
     transform: scale3d(1,1,1);
+    -webkit-filter: drop-shadow(1px 1px 0 color(wool));
+    filter: drop-shadow(1px 1px 0 color(wool));
   }
 }
 
-// @import 'spacing';
-// @import 'grid';
-// @import 'typography';
-//
-// @import 'trail/landmark';
-// @import 'trail/project';
-// @import 'trail/trail';
-// @import 'trail/footer';
-//
-// @import 'utilities';
+@import 'grid';

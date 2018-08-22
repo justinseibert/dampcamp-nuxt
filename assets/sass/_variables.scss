@@ -8,17 +8,17 @@ $desktop-min: 1025px;
 $default-timing: 300ms;
 $default-transform-animation: transform 300ms;
 
-$axis-point-radius: 30px;
 
 $mobile-frame: 1.8em;
 $mobile-frame-adjust: 0.4em;
 
 $z-map: (
-  hide:   -9999,
-  normal:  1,
-  menu:    999,
-  alert:   9999,
-  loading: 99999,
+  hide:    -9999,
+  normal:   1,
+  menu:     998,
+  location: 999,
+  alert:    9999,
+  loading:  99999,
 );
 
 @function z($key) {
