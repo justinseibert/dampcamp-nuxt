@@ -9,7 +9,7 @@
 </style>
 
 <script>
-  import AlertBar from '~/components/AlertBar';
+  import AlertBar from '~/components/nav/alert-bar';
 
   export default {
     components: {
