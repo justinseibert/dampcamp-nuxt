@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
   /*
   ** Headers of the page
@@ -10,7 +12,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/png', href: '/raindrop.png' }
+      { rel: 'icon', type: 'image/png', href: '/favicon.png' }
     ]
   },
 
@@ -37,6 +39,8 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
+    vendor: ['axios'],
+
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
